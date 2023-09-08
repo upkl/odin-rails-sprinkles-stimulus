@@ -1,8 +1,27 @@
+<!-- exercise 1 -->
 <p data-controller="hello">
   Zzzzz...
 </p>
 
+<!-- exercise 2 -->
 <div data-controller="toggle-exercise" data-toggle-exercise-change-class="hidden">
   <button data-action="toggle-exercise#toggle">Click me!</button>
-  <span data-toggle-exercise-target="smile">☺</span>
+  <span data-toggle-exercise-target="toggled">☺</span>
+</div>
+
+<!-- exercise 3 -->
+<div data-controller="toggle-exercise" data-toggle-exercise-change-class="hidden">
+  <button data-action="toggle-exercise#toggle">Show me!</button>
+  <span data-toggle-exercise-target="toggled" class="hidden">☹</span>
+</div>
+
+<div data-controller="toggle-exercise" data-toggle-exercise-change-class="hidden">
+  <button data-action="toggle-exercise#toggle" data-toggle-exercise-target="toggled">Bye!</button>
+  <span data-toggle-exercise-target="toggled" class="hidden">*poof*</span>
+</div>
+
+<div data-controller="toggle-exercise" data-toggle-exercise-change-class="highlight">
+  <span data-toggle-exercise-target="toggled">
+    <input type="checkbox" data-action="toggle-exercise#toggle">check</input>
+  </span>
 </div>

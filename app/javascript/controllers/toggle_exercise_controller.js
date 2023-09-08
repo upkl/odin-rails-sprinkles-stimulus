@@ -1,10 +1,12 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["smile"];
+  static targets = ["toggled"];
   static classes = ["change"];
 
   toggle () {
-    this.smileTarget.classList.toggle(this.changeClass);
+    for (let target of this.toggledTargets) {
+      target.classList.toggle(this.changeClass);
+    };
   };
 };
