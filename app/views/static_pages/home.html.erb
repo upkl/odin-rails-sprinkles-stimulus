@@ -4,24 +4,24 @@
 </p>
 
 <!-- exercise 2 -->
-<div data-controller="toggle-exercise" data-toggle-exercise-change-class="hidden">
-  <button data-action="toggle-exercise#toggle">Click me!</button>
-  <span data-toggle-exercise-target="toggled">☺</span>
+<div data-controller="exercise" data-exercise-change-class="hidden">
+  <button data-action="exercise#toggle">Click me!</button>
+  <span data-exercise-target="toToggle">☺</span>
 </div>
 
 <!-- exercise 3 -->
-<div data-controller="toggle-exercise" data-toggle-exercise-change-class="hidden">
-  <button data-action="toggle-exercise#toggle">Show me!</button>
-  <span data-toggle-exercise-target="toggled" class="hidden">☹</span>
+<div data-controller="exercise" data-exercise-change-class="hidden">
+  <button data-action="exercise#toggle">Show me!</button>
+  <span data-exercise-target="toToggle" class="hidden">☹</span>
 </div>
 
-<div data-controller="toggle-exercise" data-toggle-exercise-change-class="hidden">
-  <button data-action="toggle-exercise#toggle" data-toggle-exercise-target="toggled">Bye!</button>
-  <span data-toggle-exercise-target="toggled" class="hidden">*poof*</span>
+<div data-controller="exercise" data-exercise-change-class="hidden">
+  <button data-action="exercise#toggle" data-exercise-target="toToggle">Bye!</button>
+  <span data-exercise-target="toToggle" class="hidden">*poof*</span>
 </div>
 
-<div data-controller="toggle-exercise" data-toggle-exercise-change-class="highlight">
-  <span data-toggle-exercise-target="toggled">
-    <input type="checkbox" data-action="toggle-exercise#toggle">check</input>
+<div data-controller="exercise" data-exercise-change-class="highlight">
+  <span data-exercise-target="toToggle">
+    <input type="checkbox" data-action="exercise#toggle">check</input>
   </span>
 </div>
