@@ -22,6 +22,12 @@
 
 <div data-controller="exercise" data-exercise-change-class="highlight">
   <span data-exercise-target="toToggle">
-    <input type="checkbox" data-action="exercise#toggle">check</input>
+    <input type="checkbox" data-action="exercise#toggle"> check
   </span>
+</div>
+
+<!-- exercise 4-->
+<div data-controller="inputlength" data-inputlength-warn-class="hidden">
+  <div><span data-inputlength-target="warning" class="hidden highlight">Input too long!</span></div>
+  <textarea data-inputlength-target="input" data-action="inputlength#toggle" id="dummy" cols="30" rows="10"></textarea>
 </div>
